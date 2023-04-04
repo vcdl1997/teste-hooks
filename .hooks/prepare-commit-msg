@@ -1,6 +1,6 @@
 #!/bin/bash
 MESSAGE=$(cat $1) 
-COMMITFORMAT="^(feat|fix|docs|style|refactor|test|chore|perf|other):[\s]{1}[a-zA-Z\s]{10,}$"
+COMMITFORMAT="^(feat|fix|docs|style|refactor|test|chore|perf|other):([ ][a-zA-Z\s]{10,})$"
 
 if [[ $MESSAGE =~ $COMMITFORMAT ]]; then
     echo "Commit salvo localmente com sucesso, não se esqueça de realizar o push!"
